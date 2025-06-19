@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -depth -empty -exec sh -c 'echo "$(basename "{}")"' \; | sort
+find . -mindepth 1 -empty -printf "%f\n"
